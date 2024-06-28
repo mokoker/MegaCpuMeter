@@ -67,17 +67,16 @@ namespace MegaCpuMeter
             if (e.Data.GetDataPresent(typeof(BucalemunBox)))//Move train
             {
                 var box = e.Data.GetData(typeof(BucalemunBox)) as BucalemunBox;
-                box.SetLocation(i, j);
-               
-                BucalemunBox pointer = box.Next;
 
-                for (int locx = i + 1; locx < i + box.LengthOfTrain; locx++)
+                BucalemunBox pointer = box;
+                int locx = i;
+                while (pointer != null)
                 {
                     pointer.SetLocation(locx, j);
+                    locx += pointer.Size;
                     pointer = pointer.Next;
+                    
                 }
-
-
             }
 
             if (e.Data.GetDataPresent(typeof(Sensor)))
@@ -94,7 +93,8 @@ namespace MegaCpuMeter
 
                 if (Grid[i, j] == null)
                 {
-                    BucalemunBox mn = new BucalemunBox(this, droppedThingie);
+                    BucalemunBox mn = new BucalemunBox(this, droppedThingie,ControlType.NumberLogo);
+                    
                     gridMain.Children.Add(mn);
 
                     mn.SetLocation(i, j);
@@ -153,7 +153,7 @@ namespace MegaCpuMeter
                         }
                         else
                         {
-                            lb = GenerateLogoBox(x - 2, y, droppedThingie.Sensor);
+                            lb = GenerateLogoBox(x - 1-leftOne.Size, y, droppedThingie.Sensor);
                         }
                         leftOne.Prev = lb;
                         lb.Next = leftOne;

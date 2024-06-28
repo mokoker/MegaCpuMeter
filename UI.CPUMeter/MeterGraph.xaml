@@ -8,7 +8,9 @@
              " Margin="0,0,0,0">
 
     <Grid  >
-        <Canvas Name="cnvBack" Panel.ZIndex="-6" HorizontalAlignment="Left" Width="288" Background="#FFC1DE19"/>
+        <Canvas Name="cnvBack" Panel.ZIndex="-6" HorizontalAlignment="Left" Width="288" Background="#FFC1DE19">
+            <Label Content="100" Name="lblMax" FontSize="10" FontFamily="Bahnschrift Condensed" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </Canvas>
         <Canvas Name="cnvHistory" Panel.ZIndex="-5" HorizontalAlignment="Left" Width="288" />
 
 
@@ -17,6 +19,6 @@
         </Label>
         <Label x:Name="lblSensorName" Content="Name" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top" FontSize="10" Height="22"/>
         <TextBlock x:Name="lblHardware" TextWrapping="WrapWithOverflow" Text="Hardware" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="9" Margin="0,3,0,0" Height="26" Width="48"/>
-        <Label  x:Name="lblUnit" Content="MHz" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom" FontSize="10"/>
+        <Label  x:Name="lblUnit" Content="MHz" HorizontalAlignment="Left" Margin="16,0,0,76" VerticalAlignment="Bottom" FontSize="10" FontFamily="Bahnschrift Condensed"/>
     </Grid>
 </UserControl>

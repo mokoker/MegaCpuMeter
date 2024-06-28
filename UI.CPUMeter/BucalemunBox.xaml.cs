@@ -24,8 +24,16 @@ namespace MegaCpuMeter
         public void SetLocation(int x, int y)
         {
             if (X >= 0 && Y >= 0)
-                _field.Grid[X, Y] = null;
-            _field.Grid[x, y] = this;
+            {
+                for(int i = 0;i<Size;i++)
+                {
+                    _field.Grid[X+i, Y] = null;
+                }
+            }
+            for (int i = 0; i < Size; i++)
+            {
+                _field.Grid[x+i, y] = this;
+            }
             X = x;
             Y = y;
             HorizontalAlignment = HorizontalAlignment.Left;
@@ -44,34 +52,89 @@ namespace MegaCpuMeter
         {
             get => trainMode; set
             {
-                ChangeControlType(ControlType.Number);
+              
+                if(controlType == ControlType.NumberLogo)
+                  ChangeControlType(ControlType.Number);
                 trainMode = value;
             }
         }
-        private void ChangeControlType(ControlType controlType)
+
+        private void FillEmptyGrid(int count)
+        {
+            if (count > 0)
+            {
+                MoveTheRights(count);
+                FillGrid(count);
+            }
+            else
+            {
+                EmptyGrid(count*-1);
+                MoveTheRights(count);
+            }
+        }
+        private void FillGrid(int count)
+        { 
+            for(int i = 1; i <= count; i++)
+            {
+                if(_field.Grid[X+i,Y] == null)
+                {
+                    _field.Grid[X + i, Y] = this;
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+        }
+        private void EmptyGrid(int count)
+        {
+            for (int i = count; i > 0; i--)
+            {
+                if (_field.Grid[X + i, Y] != null)
+                {
+                    _field.Grid[X + i, Y] = null;
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+        }
+
+        private void ChangeControlType(ControlType ctrlType)
         {
             mainGrid.Children.Clear();
             UserControl control = null;
-            switch (controlType)
+            switch (ctrlType)
             {
                 case ControlType.Number:
                     control = new TrainNumberMeter(_field, Sensor);
                     Width = Field.QuantSize * 1;
-                    MoveTheRights(1 - size);
-                    Size = 1;
 
+                    FillEmptyGrid(1 - size);
+                    Size = 1;
+                    ctrlType = ControlType.Number;
                     break;
                 case ControlType.Bar:
                     control = new MeterBars(_field, Sensor);
                     Width = Field.QuantSize * 1;
-                    MoveTheRights(1 - size);
+                    FillEmptyGrid(1 - size);
                     Size = 1;
+                    ctrlType = ControlType.Bar;
                     break;
                 case ControlType.Graph:
                     control = new MeterGraph(_field, Sensor);
-                    MoveTheRights(3 - size);
+                    FillEmptyGrid(3 - size);
                     Size = 3;
                     Width = Field.QuantSize * Size;
+                    controlType = ControlType.Graph;
+                    break;
+                case ControlType.NumberLogo:
+                    control = new MeterNumber(_field, Sensor);
+                    Width = Field.QuantSize * 1;
+                    FillEmptyGrid(1 - size);
+                    ctrlType = ControlType.NumberLogo;
+                    Size = 1;
                     break;
 
             }
@@ -143,7 +206,7 @@ namespace MegaCpuMeter
             UserControl control = null;
             switch (type)
             {
-                case ControlType.Number:
+                case ControlType.NumberLogo:
                     control = new MeterNumber(field, sensor);
                     break;
                 case ControlType.Logo:
@@ -208,7 +271,6 @@ namespace MegaCpuMeter
                 if (controlType == ControlType.Logo)
                 {
                     pass = this;
-
                 }
                 else
                 {
@@ -224,18 +286,26 @@ namespace MegaCpuMeter
                     }
                     else
                     {
-
-                        _field.Grid[X, Y] = null;
-                        if (!RemoveLabelIfEmpty())
-                            MoveTheRights(-1);
-                        RemoveMeFromChain();
-
-
-                        _field.RemoveElement(this);
+                        RemoveThis();
+                        
                     }
                 }
             }
         }
+        private void RemoveThis()
+        {
+            for (int i = 0; i < Size; i++)
+            {
+                _field.Grid[X + i, Y] = null;
+            }
+           
+            if (!RemoveLabelIfEmpty())
+                MoveTheRights(-1 * Size);
+            RemoveMeFromChain();
+
+            _field.RemoveElement(this);
+        }
+
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
@@ -251,6 +321,29 @@ namespace MegaCpuMeter
         {
             ChangeControlType(ControlType.Graph);
 
+        }
+
+        public void RemoveMe()
+        {
+            _field.RemoveElement(this);
+            _field.Grid[X, Y] = null;
+        }
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+          
+            if (controlType == ControlType.Logo)
+            {
+                BucalemunBox pointer = this;
+                while (pointer != null)
+                {
+                    pointer.RemoveMe();
+                    pointer = pointer.next;
+                }
+            }
+            else
+            {
+                RemoveThis();
+            }    
         }
     }
 }

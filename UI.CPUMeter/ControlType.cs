@@ -8,6 +8,7 @@ namespace MegaCpuMeter
 {
     public enum ControlType
     {
+        NumberLogo,
         Number,
         Bar,
         Logo,

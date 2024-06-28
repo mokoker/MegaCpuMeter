@@ -20,6 +20,7 @@ namespace MegaCpuMeter
         private double last = 0;
         private Brush stroker = Brushes.BlueViolet;
         private int gridWithTimes = 5;
+        private double max = 0;
 
         private int[] history = Enumerable.Repeat(0, 96).ToArray();
         public ISensor Sensor
@@ -40,14 +41,79 @@ namespace MegaCpuMeter
                 DrawGraph();
             }
         }
+        private double MaxGraphValue
+        {
+            
+            get
+            {
+       
+                switch (_value.SensorType)
+                {
+                    case SensorType.Voltage:
+                        max = 5;
+                        break;
+                    case SensorType.Current:
+                        max = 10;
+                        break;
+                    case SensorType.Power:
+                        max = 500;
+                        break;
+                    case SensorType.Clock:
+                        max = 7000;
+                        break;
+                    case SensorType.Temperature:
+                        max = 120;
+                        break;
+                    case SensorType.Load:
+                        max = 100;
+                        break;
+                    case SensorType.Frequency:
+                        max = 7000;
+                        break;
+                    case SensorType.Fan:
+                        max = 5000;
+                        break;
+                    case SensorType.Flow:
+                        break;
+                    case SensorType.Control:
+                        max = 100;
+                        break;
+                    case SensorType.Level:
+                        max = 100;
+                        break;
+                    case SensorType.Factor:
+                        break;
+                    case SensorType.Data:
+                        break;
+                    case SensorType.SmallData:
+                        break;
+                    case SensorType.Throughput:
+                        break;
+                    case SensorType.TimeSpan:
+                        break;
+                    case SensorType.Energy:
+                        break;
+                    case SensorType.Noise:
+                        break;
+                    case SensorType.Humidity:
+                        break;
+                }
+                if(_value.Max.HasValue && _value.Max.Value > max)
+                    max = _value.Max.Value*2;
+                lblMax.Content = Math.Round(max,3);
+                return max;
+            }
+        }
+
         private void DrawNext(double val)
         {
+           
             var line = new Line();
             line.Stroke = stroker;
             line.X1 = Width+drawOffset;
             line.X2 = line.X1 + 2;
-            line.Y1 = Height - last * Height / 100;
-            line.Y2 = Height - val * Height / 100;
+            line.Y1 = Height - last * Height / MaxGraphValue;
+            line.Y2 = Height - val * Height / MaxGraphValue;
 
             last = val;
             cnvHistory.Children.Add(line);
@@ -67,7 +133,7 @@ namespace MegaCpuMeter
             int step = 2;
 
             double leftPosition = Width - Sensor.Values.Count() * step;
-
+            double max = (double)(_value.Max.HasValue ? _value.Max : 100);
             if (_value.Values.Count() > 0)
             {
                 double prev = _value.Values.First().Value;
@@ -78,8 +144,8 @@ namespace MegaCpuMeter
                     line.Stroke = stroker;
                     line.X1 = leftPosition;
                     line.X2 = leftPosition + 2;
-                    line.Y1 = Height - prev * Height / 100;
-                    line.Y2 = Height - x.Value * Height / 100;
+                    line.Y1 = Height - prev * Height / MaxGraphValue;
+                    line.Y2 = Height - x.Value * Height / MaxGraphValue;
                     leftPosition += 2;
                     prev = x.Value;
                     cnvHistory.Children.Add(line);

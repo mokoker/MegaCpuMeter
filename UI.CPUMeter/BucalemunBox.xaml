@@ -11,6 +11,7 @@
                 <MenuItem Header="Number Display" Click="MenuItem_Click"/>
                 <MenuItem Header="Bar Display" Click="MenuItem_Click_1"/>
                 <MenuItem Header="Graph Display" Click="MenuItem_Click_2"/>
+                <MenuItem Header="Remove" Click="MenuItem_Click_3"/>
 
 
             </ContextMenu>
