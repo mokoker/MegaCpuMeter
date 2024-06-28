@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/UI.CPUMeter/obj
+/.vs/MegaCpuMeter/DesignTimeBuild/.dtbcache.v2
+/.vs/MegaCpuMeter/FileContentIndex
