@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="MegaCpuMeter.TrainNumberMeter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MegaCpuMeter"
+             mc:Ignorable="d" Height="96" Width="96
+             " Margin="0,0,0,0" Padding="2,2,2,2" >
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="lblPercentage" Height="54"  Content="0" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Black" FontSize="40" Padding="0,1,0,0" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Margin="0,20,0,0" />
+        <Label x:Name="lblSensorName" Content="Name" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="10" Height="22" Margin="0,4,0,0"/>
+        <Label  x:Name="lblUnit" Content="MHz" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" FontSize="10" Grid.RowSpan="2"/>
+    </Grid>
+</UserControl>

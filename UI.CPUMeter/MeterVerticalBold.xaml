@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="MegaCpuMeter.MeterVerticalBold"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MegaCpuMeter"
+             mc:Ignorable="d" Height="450" Width="100" Margin="0,0,-6,0" Padding="2,2,2,2">
+
+    <Grid Height="450" >
+
+        <StackPanel x:Name="stckMain" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" RenderTransformOrigin="0.5,0.5" Height="410" Grid.RowSpan="2" Margin="0,40,0,0">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+
+        </StackPanel>
+        <Label x:Name="lblPercentage" Height="24" Width="50" Content="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" Foreground="Black" FontSize="18" Padding="0,1,0,0" RenderTransformOrigin="0.5,0.5" Grid.Row="1" VerticalContentAlignment="Bottom" >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+    </Grid>
+</UserControl>

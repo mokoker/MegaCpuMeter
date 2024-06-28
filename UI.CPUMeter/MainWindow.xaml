@@ -1,0 +1,30 @@
+﻿<Window x:Class="MegaCpuMeter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MegaCpuMeter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="609" Width="937">
+    <Grid>
+        
+        <local:Field x:Name="fieldMain" />
+
+        <Grid.ContextMenu>
+            <ContextMenu Name="cm"  StaysOpen="true">
+                <MenuItem Header="Show Sensors" Click="OnShowItems"/>
+                <MenuItem Header="Quit" Click="OnQuit"/>
+                <MenuItem Name="menuItemShowHideBar" Header="Hide Bar" Click="OnHideBarClicked"/>
+                <MenuItem Name="showFilled" Header="Show Filled" Click="OnShowFilled"/>
+
+                <!--<MenuItem Header="SaveAs"/>-->
+                
+                <!--<MenuItem Header="Recent Files">
+                    <MenuItem Header="ReadMe.txt"/>
+                    <MenuItem Header="Schedule.xls"/>
+                </MenuItem>-->
+            </ContextMenu>
+        </Grid.ContextMenu>
+
+    </Grid>
+</Window>

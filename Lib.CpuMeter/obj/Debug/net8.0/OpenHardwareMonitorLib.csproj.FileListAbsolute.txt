@@ -1,0 +1,11 @@
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\bin\Debug\net8.0\OpenHardwareMonitorLib.dll.config
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\bin\Debug\net8.0\OpenHardwareMonitorLib.deps.json
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\bin\Debug\net8.0\OpenHardwareMonitorLib.dll
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\bin\Debug\net8.0\OpenHardwareMonitorLib.pdb
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\obj\Debug\net8.0\OpenHardwareMonitorLib.csproj.AssemblyReference.cache
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\obj\Debug\net8.0\OpenHardwareMonitorLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\obj\Debug\net8.0\OpenHardwareMonitorLib.csproj.CoreCompileInputs.cache
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\obj\Debug\net8.0\OpenHardwareMonitorLib.dll
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\obj\Debug\net8.0\refint\OpenHardwareMonitorLib.dll
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\obj\Debug\net8.0\OpenHardwareMonitorLib.pdb
+D:\Codes\MegaCpuMeter\Lib.CpuMeter\obj\Debug\net8.0\ref\OpenHardwareMonitorLib.dll

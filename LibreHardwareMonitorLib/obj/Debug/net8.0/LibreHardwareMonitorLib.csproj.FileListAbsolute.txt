@@ -1,0 +1,14 @@
+D:\Codes\MegaCpuMeter\bin\Debug\net8.0\LibreHardwareMonitorLib.deps.json
+D:\Codes\MegaCpuMeter\bin\Debug\net8.0\LibreHardwareMonitorLib.dll
+D:\Codes\MegaCpuMeter\bin\Debug\net8.0\LibreHardwareMonitorLib.pdb
+D:\Codes\MegaCpuMeter\bin\Debug\net8.0\LibreHardwareMonitorLib.xml
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.csproj.AssemblyReference.cache
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.AssemblyInfoInputs.cache
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.AssemblyInfo.cs
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.csproj.CoreCompileInputs.cache
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.dll
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\refint\LibreHardwareMonitorLib.dll
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.xml
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.pdb
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\ref\LibreHardwareMonitorLib.dll

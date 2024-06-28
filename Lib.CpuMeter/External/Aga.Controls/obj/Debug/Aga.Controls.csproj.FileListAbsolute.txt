@@ -1,0 +1,9 @@
+D:\Codes\openhardwaremonitor\External\Aga.Controls\Bin\Debug\Aga.Controls.dll
+D:\Codes\openhardwaremonitor\External\Aga.Controls\Bin\Debug\Aga.Controls.pdb
+D:\Codes\openhardwaremonitor\External\Aga.Controls\obj\Debug\Aga.Controls.csproj.AssemblyReference.cache
+D:\Codes\openhardwaremonitor\External\Aga.Controls\obj\Debug\Aga.Controls.Properties.Resources.resources
+D:\Codes\openhardwaremonitor\External\Aga.Controls\obj\Debug\Aga.Controls.Tree.TreeViewAdv.resources
+D:\Codes\openhardwaremonitor\External\Aga.Controls\obj\Debug\Aga.Controls.csproj.GenerateResource.cache
+D:\Codes\openhardwaremonitor\External\Aga.Controls\obj\Debug\Aga.Controls.csproj.CoreCompileInputs.cache
+D:\Codes\openhardwaremonitor\External\Aga.Controls\obj\Debug\Aga.Controls.dll
+D:\Codes\openhardwaremonitor\External\Aga.Controls\obj\Debug\Aga.Controls.pdb

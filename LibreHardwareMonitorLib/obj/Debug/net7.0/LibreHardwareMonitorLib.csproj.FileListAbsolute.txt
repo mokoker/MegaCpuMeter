@@ -1,0 +1,15 @@
+D:\Codes\LibreHardwareMonitor\bin\Debug\net7.0\LibreHardwareMonitorLib.deps.json
+D:\Codes\LibreHardwareMonitor\bin\Debug\net7.0\LibreHardwareMonitorLib.dll
+D:\Codes\LibreHardwareMonitor\bin\Debug\net7.0\LibreHardwareMonitorLib.pdb
+D:\Codes\LibreHardwareMonitor\bin\Debug\net7.0\LibreHardwareMonitorLib.xml
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\LibreHardwareMonitorLib.csproj.AssemblyReference.cache
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\LibreHardwareMonitorLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\LibreHardwareMonitorLib.AssemblyInfoInputs.cache
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\LibreHardwareMonitorLib.AssemblyInfo.cs
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\LibreHardwareMonitorLib.csproj.CoreCompileInputs.cache
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\LibreHardwareMonitorLib.sourcelink.json
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\LibreHardwareMonitorLib.dll
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\refint\LibreHardwareMonitorLib.dll
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\LibreHardwareMonitorLib.xml
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\LibreHardwareMonitorLib.pdb
+D:\Codes\LibreHardwareMonitor\LibreHardwareMonitorLib\obj\Debug\net7.0\ref\LibreHardwareMonitorLib.dll

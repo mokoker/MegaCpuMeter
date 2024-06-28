@@ -1,0 +1,6 @@
+D:\Codes\openhardwaremonitor\External\OxyPlot\OxyPlot\Bin\Debug\OxyPlot.dll
+D:\Codes\openhardwaremonitor\External\OxyPlot\OxyPlot\Bin\Debug\OxyPlot.pdb
+D:\Codes\openhardwaremonitor\External\OxyPlot\OxyPlot\obj\Debug\OxyPlot.csproj.AssemblyReference.cache
+D:\Codes\openhardwaremonitor\External\OxyPlot\OxyPlot\obj\Debug\OxyPlot.csproj.CoreCompileInputs.cache
+D:\Codes\openhardwaremonitor\External\OxyPlot\OxyPlot\obj\Debug\OxyPlot.dll
+D:\Codes\openhardwaremonitor\External\OxyPlot\OxyPlot\obj\Debug\OxyPlot.pdb
