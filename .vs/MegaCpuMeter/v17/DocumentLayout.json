@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\Codes\\MegaCpuMeter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|d:\\codes\\megacpumeter\\ui.cpumeter\\bucalemunbox.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\bucalemunbox.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|d:\\codes\\megacpumeter\\ui.cpumeter\\metergraph.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\metergraph.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|d:\\codes\\megacpumeter\\ui.cpumeter\\bucalemunbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\bucalemunbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -19,24 +11,28 @@
       "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\field.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|d:\\codes\\megacpumeter\\ui.cpumeter\\field.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\field.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|D:\\Codes\\MegaCpuMeter\\ui.cpumeter\\logobox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\logobox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|D:\\Codes\\MegaCpuMeter\\ui.cpumeter\\meterbars.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\meterbars.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|D:\\Codes\\MegaCpuMeter\\ui.cpumeter\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|d:\\codes\\megacpumeter\\ui.cpumeter\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|d:\\codes\\megacpumeter\\ui.cpumeter\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|d:\\codes\\megacpumeter\\ui.cpumeter\\controlmenuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\controlmenuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|d:\\codes\\megacpumeter\\ui.cpumeter\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|D:\\Codes\\MegaCpuMeter\\ui.cpumeter\\metergraph.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\metergraph.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|D:\\Codes\\MegaCpuMeter\\ui.cpumeter\\meternumber.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C73B397-0637-4174-B744-2859ADAEF4F1}|UI.CPUMeter\\MegaCpuMeter.csproj|solutionrelative:ui.cpumeter\\meternumber.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,115 +47,99 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BucalemunBox.xaml.cs",
-              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\BucalemunBox.xaml.cs",
-              "RelativeDocumentMoniker": "UI.CPUMeter\\BucalemunBox.xaml.cs",
-              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\BucalemunBox.xaml.cs",
-              "RelativeToolTip": "UI.CPUMeter\\BucalemunBox.xaml.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAowIYAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T19:53:59.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Field.xaml",
-              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\Field.xaml",
-              "RelativeDocumentMoniker": "UI.CPUMeter\\Field.xaml",
-              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\Field.xaml",
-              "RelativeToolTip": "UI.CPUMeter\\Field.xaml",
+              "Title": "BucalemunBox.xaml",
+              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\BucalemunBox.xaml",
+              "RelativeDocumentMoniker": "UI.CPUMeter\\BucalemunBox.xaml",
+              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\BucalemunBox.xaml*",
+              "RelativeToolTip": "UI.CPUMeter\\BucalemunBox.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-28T18:10:47.687Z",
+              "WhenOpened": "2024-07-09T15:08:47.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Field.xaml.cs",
               "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\Field.xaml.cs",
               "RelativeDocumentMoniker": "UI.CPUMeter\\Field.xaml.cs",
               "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\Field.xaml.cs",
               "RelativeToolTip": "UI.CPUMeter\\Field.xaml.cs",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAnwKIAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T17:56:13.379Z",
+              "WhenOpened": "2024-07-09T15:01:42.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "UI.CPUMeter\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MainWindow.xaml.cs",
+              "RelativeToolTip": "UI.CPUMeter\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAAwKAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T15:01:09.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BucalemunBox.xaml",
-              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\BucalemunBox.xaml",
-              "RelativeDocumentMoniker": "UI.CPUMeter\\BucalemunBox.xaml",
-              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\BucalemunBox.xaml",
-              "RelativeToolTip": "UI.CPUMeter\\BucalemunBox.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-28T13:24:11.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LogoBox.xaml.cs",
-              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\LogoBox.xaml.cs",
-              "RelativeDocumentMoniker": "UI.CPUMeter\\LogoBox.xaml.cs",
-              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\LogoBox.xaml.cs",
-              "RelativeToolTip": "UI.CPUMeter\\LogoBox.xaml.cs",
-              "ViewState": "AQIAADwAAADA/////z8wwBgAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T12:10:27.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MainWindow.xaml",
               "RelativeDocumentMoniker": "UI.CPUMeter\\MainWindow.xaml",
               "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MainWindow.xaml",
               "RelativeToolTip": "UI.CPUMeter\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-28T11:42:13.447Z",
+              "WhenOpened": "2024-07-09T15:01:08.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ControlMenuWindow.xaml",
+              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\ControlMenuWindow.xaml",
+              "RelativeDocumentMoniker": "UI.CPUMeter\\ControlMenuWindow.xaml",
+              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\ControlMenuWindow.xaml",
+              "RelativeToolTip": "UI.CPUMeter\\ControlMenuWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-09T15:01:01.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "app.manifest",
+              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\app.manifest",
+              "RelativeDocumentMoniker": "UI.CPUMeter\\app.manifest",
+              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\app.manifest",
+              "RelativeToolTip": "UI.CPUMeter\\app.manifest",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2024-07-09T14:54:18.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "MeterBars.xaml.cs",
-              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MeterBars.xaml.cs",
-              "RelativeDocumentMoniker": "UI.CPUMeter\\MeterBars.xaml.cs",
-              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MeterBars.xaml.cs",
-              "RelativeToolTip": "UI.CPUMeter\\MeterBars.xaml.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAwwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T09:20:15.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MeterGraph.xaml.cs",
-              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MeterGraph.xaml.cs",
-              "RelativeDocumentMoniker": "UI.CPUMeter\\MeterGraph.xaml.cs",
-              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MeterGraph.xaml.cs",
-              "RelativeToolTip": "UI.CPUMeter\\MeterGraph.xaml.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAwwH4AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T11:49:51.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "MeterGraph.xaml",
               "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MeterGraph.xaml",
               "RelativeDocumentMoniker": "UI.CPUMeter\\MeterGraph.xaml",
               "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MeterGraph.xaml",
               "RelativeToolTip": "UI.CPUMeter\\MeterGraph.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-27T11:49:49.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T14:26:10.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MeterNumber.xaml",
+              "DocumentMoniker": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MeterNumber.xaml",
+              "RelativeDocumentMoniker": "UI.CPUMeter\\MeterNumber.xaml",
+              "ToolTip": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MeterNumber.xaml",
+              "RelativeToolTip": "UI.CPUMeter\\MeterNumber.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-09T14:24:22.729Z"
             }
           ]
         },

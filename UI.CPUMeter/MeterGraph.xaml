@@ -9,16 +9,21 @@
 
     <Grid  >
         <Canvas Name="cnvBack" Panel.ZIndex="-6" HorizontalAlignment="Left" Width="288" Background="#FFC1DE19">
-            <Label Content="100" Name="lblMax" FontSize="10" FontFamily="Bahnschrift Condensed" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <StackPanel Orientation="Horizontal" >
+
+                <Label Content="100" Name="lblMax" FontSize="10" FontFamily="Bahnschrift SemiBold Condensed" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label  x:Name="lblUnit" Content="MHz" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" FontFamily="Bahnschrift SemiBold Condensed"/>
+
+            </StackPanel>
+
         </Canvas>
         <Canvas Name="cnvHistory" Panel.ZIndex="-5" HorizontalAlignment="Left" Width="288" />
 
 
-        <Label x:Name="lblPercentage" Height="24"  Content="0" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Black" FontSize="20" Padding="0,1,0,0" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Margin="0,40,0,0" >
+        <Label x:Name="lblPercentage" Height="24"  Content="0" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Black" FontSize="20" Padding="0,1,0,0" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Margin="0,56,0,0" FontFamily="Bahnschrift SemiBold Condensed" >
 
         </Label>
-        <Label x:Name="lblSensorName" Content="Name" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top" FontSize="10" Height="22"/>
-        <TextBlock x:Name="lblHardware" TextWrapping="WrapWithOverflow" Text="Hardware" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="9" Margin="0,3,0,0" Height="26" Width="48"/>
-        <Label  x:Name="lblUnit" Content="MHz" HorizontalAlignment="Left" Margin="16,0,0,76" VerticalAlignment="Bottom" FontSize="10" FontFamily="Bahnschrift Condensed"/>
+        <Label x:Name="lblSensorName" Content="Name" HorizontalAlignment="Center" Margin="0,34,0,0" VerticalAlignment="Top" FontSize="10" Height="22" FontFamily="Bahnschrift SemiBold Condensed"/>
+        <TextBlock x:Name="lblHardware" TextWrapping="WrapWithOverflow" Text="Hardware" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="9" Margin="0,3,0,0" Height="26" Width="48" FontFamily="Bahnschrift SemiBold Condensed" TextAlignment="Center"/>
     </Grid>
 </UserControl>

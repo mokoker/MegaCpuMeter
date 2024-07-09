@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MegaCpuMeter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5890902707fea8f9e3b42597fa00468f532f05f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b4d44d5761fe14033b6172f54ca19c90e9104f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("MegaCpuMeter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MegaCpuMeter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

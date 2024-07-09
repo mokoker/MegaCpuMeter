@@ -72,3 +72,4 @@ D:\Codes\MegaCpuMeter\UI.CPUMeter\obj\Debug\net8.0-windows\refint\MegaCpuMeter.d
 D:\Codes\MegaCpuMeter\UI.CPUMeter\obj\Debug\net8.0-windows\MegaCpuMeter.pdb
 D:\Codes\MegaCpuMeter\UI.CPUMeter\obj\Debug\net8.0-windows\MegaCpuMeter.genruntimeconfig.cache
 D:\Codes\MegaCpuMeter\UI.CPUMeter\obj\Debug\net8.0-windows\ref\MegaCpuMeter.dll
+D:\Codes\MegaCpuMeter\UI.CPUMeter\obj\Debug\net8.0-windows\MegaCpuMeter.sourcelink.json

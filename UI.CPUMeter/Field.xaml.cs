@@ -12,7 +12,7 @@ namespace MegaCpuMeter
     /// </summary>
     public partial class Field : UserControl
     {
-        private BucalemunBox[,] grid = new BucalemunBox[10, 10];
+        private BucalemunBox[,] grid = new BucalemunBox[20, 20];
         private static int quantSize = 96;
 
         public BucalemunBox[,] Grid { get => grid; set => grid = value; }

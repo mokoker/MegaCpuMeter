@@ -11,11 +11,11 @@
         <Rectangle x:Name="rctMain" Margin="10,1,10,1" Width="80" VerticalAlignment="Bottom" >
 
         </Rectangle>
-        <Label x:Name="lblSensorName" Content="Name" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" FontSize="10" Height="22"/>
+        <Label x:Name="lblSensorName" Content="Name" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" FontSize="10" Height="22" FontFamily="Bahnschrift SemiBold Condensed"/>
 
-        <Label x:Name="lblPercentage" Height="24"  Content="0" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Black" FontSize="20" Padding="0,1,0,0" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Margin="0,40,0,0" >
+        <Label x:Name="lblPercentage" Height="24"  Content="0" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Black" FontSize="20" Padding="0,1,0,0" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Margin="0,40,0,0" FontFamily="Bahnschrift SemiBold Condensed" >
 
         </Label>
-        <Label  x:Name="lblUnit" Content="MHz" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom" FontSize="10"/>
+        <Label  x:Name="lblUnit" Content="MHz" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Bottom" FontSize="10" FontFamily="Bahnschrift SemiBold Condensed"/>
     </Grid>
 </UserControl>

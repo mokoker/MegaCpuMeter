@@ -9,6 +9,6 @@
 
     <Grid >
         <Image x:Name="imgHard" HorizontalAlignment="Center" Height="76" VerticalAlignment="Top" Width="74" Source="/oa_cpu.png" Panel.ZIndex="-5" Margin="0,0,0,0"/>
-        <Label x:Name="lblSensorName" Content="Name" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" FontSize="10" Height="22"/>
+        <Label x:Name="lblSensorName" Content="Name" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" FontSize="9" Height="22" FontFamily="Bahnschrift SemiBold Condensed"/>
     </Grid>
 </UserControl>
