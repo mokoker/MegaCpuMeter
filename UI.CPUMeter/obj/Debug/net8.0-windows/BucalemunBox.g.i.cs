@@ -69,7 +69,7 @@ namespace MegaCpuMeter {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MegaCpuMeter;component/bucalemunbox.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Systemeter;component/bucalemunbox.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\BucalemunBox.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

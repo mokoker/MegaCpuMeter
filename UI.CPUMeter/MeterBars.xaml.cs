@@ -14,6 +14,7 @@ namespace MegaCpuMeter
         private Field _parentField;
         private int divider = 1;
         private GradientStopCollection colorScale;
+        private double max = 0;
         public ISensor Sensor
         {
             get
@@ -34,7 +35,69 @@ namespace MegaCpuMeter
             }
         }
 
-   
+        private double MaxGraphValue
+        {
+
+            get
+            {
+
+                switch (_value.SensorType)
+                {
+                    case SensorType.Voltage:
+                        max = 5;
+                        break;
+                    case SensorType.Current:
+                        max = 10;
+                        break;
+                    case SensorType.Power:
+                        max = 500;
+                        break;
+                    case SensorType.Clock:
+                        max = 7000;
+                        break;
+                    case SensorType.Temperature:
+                        max = 120;
+                        break;
+                    case SensorType.Load:
+                        max = 100;
+                        break;
+                    case SensorType.Frequency:
+                        max = 7000;
+                        break;
+                    case SensorType.Fan:
+                        max = 5000;
+                        break;
+                    case SensorType.Flow:
+                        break;
+                    case SensorType.Control:
+                        max = 100;
+                        break;
+                    case SensorType.Level:
+                        max = 100;
+                        break;
+                    case SensorType.Factor:
+                        break;
+                    case SensorType.Data:
+                        break;
+                    case SensorType.SmallData:
+                        break;
+                    case SensorType.Throughput:
+                        break;
+                    case SensorType.TimeSpan:
+                        break;
+                    case SensorType.Energy:
+                        break;
+                    case SensorType.Noise:
+                        break;
+                    case SensorType.Humidity:
+                        break;
+                }
+                if (_value.Max.HasValue && _value.Max.Value > max)
+                    max = _value.Max.Value * 2;
+               
+                return max;
+            }
+        }
 
         private void FillUnit(SensorType type)
         {
@@ -97,6 +160,7 @@ namespace MegaCpuMeter
         {
             if (value.HasValue && value != 0)
             {
+       
                 var x = value.Value / divider;
                 lblPercentage.Content = x.ToString("#.##");
             }
@@ -105,16 +169,17 @@ namespace MegaCpuMeter
                 lblPercentage.Content = 0;
             }
 
+           
 
-            rctMain.Height =(double) value * 0.96;
+            rctMain.Height =(double) value/ MaxGraphValue * 0.96*this.Height;
 
      
-            rctMain.Fill = new SolidColorBrush(GetColor((double)value));
+            rctMain.Fill = new SolidColorBrush(GetColor((double)value/MaxGraphValue));
         }
 
         private Color GetColor(double value)
         {
-            return colorScale.GetRelativeColor(value / 100);
+            return colorScale.GetRelativeColor(value);
         }
         private void Value_SensorValueChanged(float? value)
         {
@@ -141,6 +206,7 @@ namespace MegaCpuMeter
         public MeterBars(Field field, ISensor sensor) : this(field)
         {
             Sensor = sensor;
+ 
         }
     }
 }

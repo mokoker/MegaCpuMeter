@@ -12,3 +12,4 @@ D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\refint\LibreHardw
 D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.xml
 D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.pdb
 D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\ref\LibreHardwareMonitorLib.dll
+D:\Codes\MegaCpuMeter\LibreHardwareMonitorLib\obj\Debug\net8.0\LibreHardwareMonitorLib.sourcelink.json

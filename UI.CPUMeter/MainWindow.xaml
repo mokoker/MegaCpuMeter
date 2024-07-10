@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MegaCpuMeter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="609" Width="937">
+        Title="systeMeter" Height="609" Width="937" Icon="/icon.png">
     <Grid>
         
         <local:Field x:Name="fieldMain" />
@@ -15,7 +15,7 @@
                 <MenuItem Header="Show Sensors" Click="OnShowItems"/>
                 <MenuItem Header="Quit" Click="OnQuit"/>
                 <MenuItem Name="menuItemShowHideBar" Header="Hide Bar" Click="OnHideBarClicked"/>
-                <MenuItem Name="showFilled" Header="Show Filled" Click="OnShowFilled"/>
+                <MenuItem Name="saveDesign" Header="Save Design" Click="OnSaveLayout"/>
 
                 <!--<MenuItem Header="SaveAs"/>-->
                 

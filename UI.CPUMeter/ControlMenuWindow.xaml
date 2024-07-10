@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MegaCpuMeter"
         mc:Ignorable="d"
-        Title="ControlMenuWindow" Height="450" Width="264">
+        Title="Sensors" Height="450" Width="264">
     <Grid Name="grdMain">
 
     </Grid>

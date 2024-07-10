@@ -10,9 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="icon.png" />
     <None Remove="imgs\cpu.png" />
     <None Remove="imgs\fan.png" />
     <None Remove="imgs\harddisk.png" />
+    <None Remove="imgs\icon.ico" />
+    <None Remove="imgs\icon.png" />
     <None Remove="imgs\oa_battery.png" />
     <None Remove="imgs\oa_cpu.png" />
     <None Remove="imgs\oa_disc.png" />
@@ -31,6 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="icon.png" />
     <Resource Include="imgs\fan.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -75,6 +79,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="imgs\harddisk.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imgs\icon.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imgs\icon.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="imgs\oa_battery.png">

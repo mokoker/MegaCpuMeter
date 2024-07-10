@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MegaCpuMeter", "UI.CPUMeter\MegaCpuMeter.csproj", "{5C73B397-0637-4174-B744-2859ADAEF4F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Systemeter", "UI.CPUMeter\Systemeter.csproj", "{5C73B397-0637-4174-B744-2859ADAEF4F1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibreHardwareMonitorLib", "LibreHardwareMonitorLib\LibreHardwareMonitorLib.csproj", "{73558F25-7CF6-44A9-9764-068752F04DD8}"
 EndProject

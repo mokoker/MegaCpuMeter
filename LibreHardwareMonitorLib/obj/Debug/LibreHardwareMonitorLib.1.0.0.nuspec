@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/LibreHardwareMonitor/LibreHardwareMonitor</projectUrl>
     <description>Monitor the temperature sensors, fan speeds, voltages, load and clock speeds of your computer.</description>
     <tags>libre open hardware monitor monitoring system logging cpu gpu</tags>
-    <repository type="git" url="https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" />
+    <repository type="git" url="https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" commit="9a8fe603a2087aa8a8f3f6cd6f060d56f9705813" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="HidSharp" version="2.1.0" exclude="Build,Analyzers" />

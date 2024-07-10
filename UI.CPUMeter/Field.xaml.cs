@@ -4,6 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using static LibreHardwareMonitor.Hardware.Storage.NVMeGeneric;
+using System.Text.Json;
 
 namespace MegaCpuMeter
 {
@@ -12,7 +13,8 @@ namespace MegaCpuMeter
     /// </summary>
     public partial class Field : UserControl
     {
-        private BucalemunBox[,] grid = new BucalemunBox[20, 20];
+        private static int sizeOne = 20;
+        private BucalemunBox[,] grid = new BucalemunBox[sizeOne, sizeOne];
         private static int quantSize = 96;
 
         public BucalemunBox[,] Grid { get => grid; set => grid = value; }
@@ -36,6 +38,30 @@ namespace MegaCpuMeter
             HideGrid();
 
         }
+        public List<StoredSquare>  ExportData()
+        {
+            var data = new List<StoredSquare>();
+            for (int i = 0; i < sizeOne; i++)
+            {
+                for (int j = 0; j < sizeOne; j++)
+                {
+                 
+                    var x= grid[i, j];
+                    if(x != null)
+                         data.Add(new StoredSquare { Name = x.Sensor.Identifier.ToString(), X = x.X, Y = x.Y, Type = x.ControlType });
+                } 
+            }
+            return data;
+        }
+
+        public void AddSensor(int i,int j, ISensor sensor,ControlType type)
+        {
+            BucalemunBox mn = new BucalemunBox(this, sensor, type);
+            gridMain.Children.Add(mn);
+            mn.SetLocation(i, j);
+            CheckTrainX(i, j, mn);
+        }
+
 
         public void ShowFulls()
         {
@@ -93,16 +119,10 @@ namespace MegaCpuMeter
 
                 if (Grid[i, j] == null)
                 {
-                    BucalemunBox mn = new BucalemunBox(this, droppedThingie,ControlType.NumberLogo);
-                    
+                    BucalemunBox mn = new BucalemunBox(this, droppedThingie,ControlType.NumberLogo);          
                     gridMain.Children.Add(mn);
-
-                    mn.SetLocation(i, j);
-
-           
+                    mn.SetLocation(i, j);    
                     CheckTrainX(i, j, mn);
-
-
                 }
                 else
                 {

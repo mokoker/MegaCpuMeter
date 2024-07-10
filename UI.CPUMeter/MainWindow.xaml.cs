@@ -1,17 +1,14 @@
 ﻿using HidSharp.Utility;
 using LibreHardwareMonitor.Hardware;
 using LibreHardwareMonitor.Hardware.Cpu;
+using System.Formats.Tar;
+using System.IO;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Xml.Linq;
 
 namespace MegaCpuMeter
 {
@@ -21,14 +18,15 @@ namespace MegaCpuMeter
     public partial class MainWindow : Window
     {
         private Computer computer;
-        private Timer timer;
+        private Timer timer, timerx;
         private UpdateVisitor updateVisitor;
         private TreeView tvComp;
         ControlMenuWindow window;
-
+        private Dictionary<string, ISensor> sensors= new Dictionary<string,ISensor>();
+        private List<StoredSquare> forgottenSquares = new List<StoredSquare>();
         public MainWindow()
         {
-
+            IsNetFramework45Installed();
             tvComp = new TreeView();
             window = new ControlMenuWindow(tvComp);
             hardwareList = new List<IHardware>();
@@ -36,8 +34,8 @@ namespace MegaCpuMeter
             updateVisitor = new UpdateVisitor();
             InitializeComponent();
             computer = new Computer();
+            this.Closed += MainWindow_Closed;
             computer.HardwareAdded += new HardwareEventHandler(HardwareAdded);
-
             computer.IsCpuEnabled = true;
             computer.IsControllerEnabled = true;
             computer.IsMotherboardEnabled = true;
@@ -45,12 +43,73 @@ namespace MegaCpuMeter
             computer.IsGpuEnabled = true;
             computer.IsStorageEnabled = true;
             computer.IsMemoryEnabled = true;
-
+            
             computer.Open();
             timer = new Timer(CheckStatus, null, 2000, 1000);
 
+            //  timerx = new Timer(FillMemory, null, 100,2000);
+            FillMemory(null);
         }
 
+        private void MainWindow_Closed(object? sender, EventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private static bool IsNetFramework45Installed()
+        {
+            Type type;
+            try
+            {
+                type = TryGetDefaultDllImportSearchPathsAttributeType();
+            }
+            catch (TypeLoadException)
+            {
+                MessageBox.Show(
+                  "This application requires the .NET Framework 4.5 or a later version.\n" +
+                  "Please install the latest .NET Framework. For more information, see\n\n" +
+                  "https://dotnet.microsoft.com/download/dotnet-framework",
+                  "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            return type != null;
+        }
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        private static Type TryGetDefaultDllImportSearchPathsAttributeType()
+        {
+            return typeof(DefaultDllImportSearchPathsAttribute);
+        }
+
+        public void FillMemory(Object stateInfo)
+        {
+            if (File.Exists("memory.mem"))
+            {
+                using (StreamReader readtext = new StreamReader("memory.mem"))
+                {
+                    string readText = readtext.ReadToEnd();
+                    var xx = JsonSerializer.Deserialize<List<StoredSquare>>(readText);
+
+                    foreach (var x in xx)
+                    {
+                        if (x.Type != ControlType.Logo)
+                        {
+                            
+                            if (!sensors.ContainsKey(x.Name))
+                            {
+                                forgottenSquares.Add(x);
+                            }
+                            else {
+                                Dispatcher.BeginInvoke((Action)(() => fieldMain.AddSensor(x.X, x.Y, sensors[x.Name], x.Type)));
+                            }
+
+                        }
+                    }
+                }   
+            }
+           // timerx.Dispose();
+
+        }
 
         public void CheckStatus(Object stateInfo)
         {
@@ -78,18 +137,24 @@ namespace MegaCpuMeter
         {
 
             Dispatcher.BeginInvoke((Action)(() => FuckMe(sensor)));
-         
+
         }
 
         private void FuckMe(ISensor sensor)
         {
+            var xy =  forgottenSquares.Find(x => x.Name == sensor.Identifier.ToString());
+            if (xy != null)
+            {
+                Dispatcher.BeginInvoke((Action)(() => fieldMain.AddSensor(xy.X, xy.Y, sensor, xy.Type)));
+            }
+
             TreeViewItem result = null;
             IterateTree(tvComp.Items, sensor.Hardware.Name, ref result);
             if (result != null)
             {
                 TreeViewItem subKey = null;
                 IterateTree(result.Items, sensor.SensorType.ToString(), ref subKey);
-                if(subKey == null)
+                if (subKey == null)
                 {
                     subKey = new TreeViewItem();
                     subKey.Header = sensor.SensorType.ToString();
@@ -137,6 +202,8 @@ namespace MegaCpuMeter
         {
             foreach (ISensor sen in hardware.Sensors)
             {
+                sensors[sen.Identifier.ToString()]= sen;
+
                 TreeViewItem subKey = null;
                 IterateTree(item.Items, sen.SensorType.ToString(), ref subKey);
                 if (subKey == null)
@@ -148,7 +215,7 @@ namespace MegaCpuMeter
 
                 subKey.Items.Add(new MegaTreeViewItem(sen));
 
-               
+
             }
         }
         private void OnShowItems(object sender, RoutedEventArgs e)
@@ -156,19 +223,22 @@ namespace MegaCpuMeter
 
             window.Show();
             window.Activate();
-            
-  
+
+
         }
 
-        private void OnShowFilled(object sender, RoutedEventArgs e)
+        private void OnSaveLayout(object sender, RoutedEventArgs e)
         {
-            fieldMain.ShowFulls();
+            var result = fieldMain.ExportData();
+            string jsonString = JsonSerializer.Serialize(result);
+            File.WriteAllText("memory.mem", jsonString);
+
         }
 
         private void OnQuit(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
-    
+
         }
 
         private void OnHideBarClicked(object sender, RoutedEventArgs e)
@@ -177,7 +247,7 @@ namespace MegaCpuMeter
             {
                 this.WindowStyle = WindowStyle.None;
                 menuItemShowHideBar.Header = "Show Border";
-                
+
             }
             else if (this.WindowStyle == WindowStyle.None)
             {

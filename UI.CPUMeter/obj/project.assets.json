@@ -624,9 +624,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MegaCpuMeter.csproj",
-      "projectName": "MegaCpuMeter",
-      "projectPath": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MegaCpuMeter.csproj",
+      "projectUniqueName": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\Systemeter.csproj",
+      "projectName": "Systemeter",
+      "projectPath": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\Systemeter.csproj",
       "packagesPath": "C:\\Users\\Blackneuron\\.nuget\\packages\\",
       "outputPath": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\obj\\",
       "projectStyle": "PackageReference",

@@ -139,7 +139,8 @@ namespace MegaCpuMeter
 
             }
             mainGrid.Children.Add(control);
-
+            UpdateLayout();
+            GC.Collect();
         }
 
         public BucalemunBox Next
@@ -171,6 +172,9 @@ namespace MegaCpuMeter
             }
 
         }
+
+        public ControlType ControlType { get => controlType; set => controlType = value; }
+
         public void CreateBorderForGroup()
         {
             Brush brush = new SolidColorBrush(Colors.Green);
@@ -211,6 +215,11 @@ namespace MegaCpuMeter
                     break;
                 case ControlType.Logo:
                     control = new LogoBox(sensor.Hardware);
+                    break;
+                case ControlType.Graph:
+                    control = new MeterGraph(field,sensor);
+                    Size = 3;
+                    Width = Field.QuantSize * Size;
                     break;
             }
             mainGrid.Children.Add(control);

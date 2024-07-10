@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R1oSjzw4tYnmx9CGVbkC2GNMUFHHBpRg/GS6MAucC+i6i1pFRh/Vf9kNeICm+9AyXp17PCVzZiiXpBUgAgK5mA==",
+  "dgSpecHash": "or36klOSGTU/c2/mThg7RmLIJJfIsYCv8LTam7pZwTdqlH1VprqZwFSSnoMb4vUbzGyJ7f2iX5sfdpTZZKytLQ==",
   "success": true,
-  "projectFilePath": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\MegaCpuMeter.csproj",
+  "projectFilePath": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\Systemeter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Blackneuron\\.nuget\\packages\\hidsharp\\2.1.0\\hidsharp.2.1.0.nupkg.sha512",
     "C:\\Users\\Blackneuron\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",

@@ -85,7 +85,7 @@ namespace MegaCpuMeter {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MegaCpuMeter;component/meterbars.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Systemeter;component/meterbars.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MeterBars.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
