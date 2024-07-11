@@ -77,7 +77,7 @@ namespace MegaCpuMeter {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Systemeter;component/trainnumbermeter.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Systemeter;V1.0.0.0;component/trainnumbermeter.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\TrainNumberMeter.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

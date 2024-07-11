@@ -7,6 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>AnyCPU;x64;x86</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,7 +30,6 @@
     <None Remove="imgs\oa_ram.png" />
     <None Remove="imgs\thermometer.png" />
     <None Remove="imgs\wifi.png" />
-    <None Remove="oa_cpu.png" />
     <None Remove="openart-image__tj7glmd_1719574661763_raw.jpg" />
   </ItemGroup>
 
@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Drawing.Common" Version="8.0.6" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.7" />
     <PackageReference Include="System.Management" Version="8.0.0" />
   </ItemGroup>
 
@@ -126,8 +126,6 @@
     <Resource Include="imgs\wifi.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="oa_cpu.png" />
-    <Resource Include="openart-image__tj7glmd_1719574661763_raw.jpg" />
   </ItemGroup>
 
 </Project>

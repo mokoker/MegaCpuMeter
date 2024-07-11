@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Monitor the temperature sensors, fan speeds, voltages, load and clock speeds of y" +
     "our computer.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a8fe603a2087aa8a8f3f6cd6f060d56f9705813")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acb73ef184e790b267993d97982e224449e8dc0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibreHardwareMonitorLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibreHardwareMonitorLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

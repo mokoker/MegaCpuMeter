@@ -188,7 +188,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Drawing.Common/8.0.6": {
+      "System.Drawing.Common/8.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "8.0.0"
@@ -489,10 +489,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Drawing.Common/8.0.6": {
-      "sha512": "aSwRnJzz6fZ73JvWMMG0KvBwOnXsBTFtfHLriQyAPrDIZ+NrDfl15GWbO/A35k0dtH77D7jfxzEcFF7RONtU/w==",
+    "System.Drawing.Common/8.0.7": {
+      "sha512": "DoeBae0gZvxs3mtfoub6F1k28fSkFPzmhFuvblplKMnLYKmTMVy0j4Yxahh96KM532JzHGDxhJn1VpMKSB1pyg==",
       "type": "package",
-      "path": "system.drawing.common/8.0.6",
+      "path": "system.drawing.common/8.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -524,7 +524,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "system.drawing.common.8.0.6.nupkg.sha512",
+        "system.drawing.common.8.0.7.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -613,7 +613,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "LibreHardwareMonitorLib >= 1.0.0",
-      "System.Drawing.Common >= 8.0.6",
+      "System.Drawing.Common >= 8.0.7",
       "System.Management >= 8.0.0"
     ]
   },
@@ -673,7 +673,7 @@
         "dependencies": {
           "System.Drawing.Common": {
             "target": "Package",
-            "version": "[8.0.6, )"
+            "version": "[8.0.7, )"
           },
           "System.Management": {
             "target": "Package",

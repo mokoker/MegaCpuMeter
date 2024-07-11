@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "or36klOSGTU/c2/mThg7RmLIJJfIsYCv8LTam7pZwTdqlH1VprqZwFSSnoMb4vUbzGyJ7f2iX5sfdpTZZKytLQ==",
+  "dgSpecHash": "8GqozPpHEKPHA/uPkszLvdnqbyiEDudRUV2OGK5IiAX6TkwP7NntNRCuiztqXiL6R7lwzinW07YCURPr6hCknQ==",
   "success": true,
   "projectFilePath": "D:\\Codes\\MegaCpuMeter\\UI.CPUMeter\\Systemeter.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,7 @@
     "C:\\Users\\Blackneuron\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\8.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
     "C:\\Users\\Blackneuron\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\8.0.0\\runtime.osx-x64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
     "C:\\Users\\Blackneuron\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
-    "C:\\Users\\Blackneuron\\.nuget\\packages\\system.drawing.common\\8.0.6\\system.drawing.common.8.0.6.nupkg.sha512",
+    "C:\\Users\\Blackneuron\\.nuget\\packages\\system.drawing.common\\8.0.7\\system.drawing.common.8.0.7.nupkg.sha512",
     "C:\\Users\\Blackneuron\\.nuget\\packages\\system.io.ports\\8.0.0\\system.io.ports.8.0.0.nupkg.sha512",
     "C:\\Users\\Blackneuron\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
   ],
